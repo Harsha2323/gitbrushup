@@ -11,5 +11,4 @@ test('locatingmultipleelements', async({page})=>{
             console.log(linktext);
         }
 
-
 })

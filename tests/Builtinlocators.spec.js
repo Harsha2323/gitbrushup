@@ -22,6 +22,4 @@ test('builtinlocator', async({page})=>{
     await expect (page.getByText(name)).toBeVisible()
     
 
-
-
 })
