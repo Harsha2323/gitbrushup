@@ -20,6 +20,7 @@ test('builtinlocator', async({page})=>{
     //getByText -- to cature the locator by text
    const name =  await page.locator("//p[@class='oxd-userdropdown-name']").textContent()
     await expect (page.getByText(name)).toBeVisible()
+    console.log(name)
     
 
 })

@@ -34,7 +34,7 @@ await expect(page).toHaveURL('https://demo.nopcommerce.com/register')
 
 
 // assertion apply to check the number of elements
-const element = await page.locator("//select[@name='DateOfBirthDay']//option")
+const element = page.locator("//select[@name='DateOfBirthDay']//option")
 await expect (element).toHaveCount(32)
 
 //and still some more assertions are there.... 
