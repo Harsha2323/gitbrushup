@@ -13,13 +13,12 @@ await page.waitForTimeout(3000)
 
 })
 
+
 test("dismiss alerts",async({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/')
-    
-    page.on("dailog", async dailog =>{
+    page.on("dialog", async dailog =>{
     await dailog.dismiss()
     })
-    
     await page.locator('#confirmBtn').click()
     await page.waitForTimeout(3000)
     
