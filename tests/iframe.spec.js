@@ -8,6 +8,7 @@ const framess= page.frame()
 console.log(framess)
 
 
+
 //approvh 1 usung name or url
 
 const frames1 = page.frame({url: 'http/....'})

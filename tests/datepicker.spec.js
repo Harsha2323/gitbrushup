@@ -8,7 +8,7 @@ test ('date picker entring the date directly', async({page})=>{
     await page.waitForTimeout(3000)
 })
 
-test.only ('date picker using loop', async({page})=>{
+test ('date picker using loop', async({page})=>{
 const year = '2025'
 const month = 'October'
 const date = '23'

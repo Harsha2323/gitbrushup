@@ -38,6 +38,7 @@ test.only('handling multipal window', async({})=>{
         //we call this as assynccronou steps--------------- for the above promiss
 
         
+        
         const text = await newPage.locator('.red').textContent()
         console.log(text)
 

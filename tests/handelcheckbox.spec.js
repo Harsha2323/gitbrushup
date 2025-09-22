@@ -51,6 +51,7 @@ for(const mcheckbox of checkboxlocator)
     await expect( page.locator('id=tuesday')).not.toBeChecked()
     await page.waitForTimeout(1000)
 
+    
 })
 
 // == you can use this in the array form [] to declare the list of selector

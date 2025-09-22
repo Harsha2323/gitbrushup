@@ -17,4 +17,7 @@ test('screenshot of perticular element', async({page})=>{
    const buttonns=  page.locator('#confirmBtn')
     await buttonns.screenshot({path: 'harrs.png'})
 
+    //or
+   // const buttonnns=  page.locator('#confirmBtn').screenshot({path: 'jj.png'})
+
 })

@@ -12,5 +12,4 @@ page.addInitScript(
     value => {window.localStorage.setItem('token', value)},token
     )
 
-
 })
