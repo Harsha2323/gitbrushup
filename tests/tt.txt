@@ -1,0 +1,53 @@
+Git
+
+Git init
+Git add —— add to stage
+Git add .  ————- to add al the files in the project
+Git commit -m“first project”. ——— adding to git branch
+Git remote add origin <link>
+Git push -u origin main(any branch name)
+Git checkout -b harshabranch - if ‘’harshabranch’’ is not there then it will create new branch with that name and then other will switch
+(You can use git checkout branch name or git switch branch name.  To switch from now branch to another branch  )
+Git merge —— to merge the code changes between 2 branch (first with to the branch that you anted to merge with)
+
+
+Git log.   —— logs
+Git status   ——  status
+Git diff
+Git commit -a -m “first project” —adding to branch with out adding to stage
+Git diff —— to find the difference btw local and stage
+Git diff -staged — to find the difference between staging and commit
+Git rm —cached cread.txt.   ———to delete the file from the git
+
+Git checkout harshabranch  — it will directly with to the provided branch, if the branch is not here then it will give error
+
+
+instaling Playwright —  npm init playwright@latest
+
+Commands to run the test ——
+1. npx playwright show-report  —report.  —  to see the reports
+2. npx playwright test            - to run all the test
+3. npx playwright test —headed             - to see the browse that test is runing all the test
+4. npx playwright test Home.spec.js            -    to run specific test
+5. npx playwright test Home.spec.js --project=chromium       - to run specific test in specific browser
+6. npx playwright test Home.spec.js --project=chromium  —headed      -  to see the running specific test in specific browser
+7. npx playwright test Home.spec.js --project=chromium  —headed —debug  -  to see the running specific test in specific browser in debug mode
+8. npx playwright codegen — to record and generate the code
+
+
+
+Locate single element——
+Page.locator().click()
+Page.click()
+Page.fill(‘’,’’)
+Page.locator(‘’).fill()
+
+Locate the multiple elements—
+Page.$$()
+
+To install allure plugin
+Allure report - npm i -D allure-playwright
+Or     (. npm install -g allure-commandline --save-dev. )
+
+Run the test
+Npx playwright test —project chromium —headed —reporter=line,allure-playwright
